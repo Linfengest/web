@@ -1,0 +1,17 @@
+ 
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1><a href="{% url 'blog:index' %} "> 主博客</a></h1></div>
+
+<div class="row text-center vertical-middle-sm">
+    <h1>写文章</h1>
+    <form name="input" action="." method="post">{% csrf_token %}
+    {{ form.as_p }}
+        <input type="submit" value="Submit"></form>
+    </div>
+
+{% endblock %}

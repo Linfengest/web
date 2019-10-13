@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <p>你已经退出这个新世界</p>
+    <p><a href="{% url 'account:login' %}">点此重新登陆，重新进入这个新世界</a></p>
+</div>
+
+{% endblock %}

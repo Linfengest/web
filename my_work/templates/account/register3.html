@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>注册出错</h1>
+    <p>该用户已经注册过</p>
+    <p><a href="{% url 'account:register' %}">点此重新注册</a></p>
+</div>
+
+{% endblock %}

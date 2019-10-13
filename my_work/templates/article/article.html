@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <p><a href="{% url 'blog:index' %}">主页</a></p>
+    <p>文章详情</p>
+    <p>文章标题：{{data.title}}</p>
+    <p>作者：{{data.author.username}}</p>
+    <p>发表时间：{{data.publish}}</p>
+    <div>{{data.body}}</div>
+</div>
+
+{% endblock %}

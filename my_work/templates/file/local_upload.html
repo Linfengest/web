@@ -1,0 +1,16 @@
+ 
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1><a href="{% url 'blog:index' %} "> 主博客</a></h1></div>
+    <p><a href="/myfile/">点此浏览文件</a></p>
+<form enctype="multipart/form-data" action="." method="post">{% csrf_token %}
+   <input type="file" name="myfile" />
+   <br/>
+   <input type="submit" value="上传文件"/>
+</form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>登陆出错</h1>
+    <p>请确认你已经注册或者确认账号，密码输入正确</p>
+    <p><a href="{% url 'account:login' %}">点此重新登陆</a></p>
+</div>
+
+{% endblock %}

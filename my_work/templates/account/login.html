@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <p>这是一个新世纪，也是一个新世界</p>
+    <h1>登陆</h1>
+    <p>请输入账号和密码</p>
+    <form class="form-horizontal" action="." method="post" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="登陆">
+    </form>
+</div>
+
+{% endblock %}

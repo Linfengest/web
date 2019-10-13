@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>我的博客</h1>
+    <p><a href="{% url 'account:login' %}">用户登陆</a></p>
+    <p><a href="{% url 'article:list' %}">文章列表</a></p>
+    <p><a href="{% url 'file:index' %}">文件共享</a></p>
+    <p><a href="{% url 'file:local_upload' %}">查看本地文件</a></p>
+</div>
+
+{% endblock %}

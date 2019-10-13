@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <p><a href="{% url 'blog:index' %}">主页</a></p>
+    <p>所有文章列表</p>
+    {% for data1 in data %}
+    <li><a href="{{data1.id}}">{{data1.title}}</a></li>
+    {% endfor %}
+</div>
+
+{% endblock %}

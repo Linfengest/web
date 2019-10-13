@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}blog titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>注册成功</h1>
+    <p>进入新世界去吧</p>
+    <p><a href="{% url 'blog:index' %}">点此返回主页</a></p>
+</div>
+
+{% endblock %}
